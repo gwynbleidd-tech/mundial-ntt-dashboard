@@ -47,6 +47,15 @@ type Phase = "grupos" | "eliminatorias";
 const TODAY_ISO = new Date().toISOString().slice(0, 10);
 const DEFAULT_PHASE: Phase = TODAY_ISO >= "2026-06-28" ? "eliminatorias" : "grupos";
 
+function getDefaultKoRonda(): KoRondaKey {
+  for (let i = KO_RONDAS.length - 1; i >= 0; i--) {
+    if ((CRUCES["enfr_" + KO_RONDAS[i].key] ?? []).some((c) => c.kickoff)) {
+      return KO_RONDAS[i].key;
+    }
+  }
+  return "dieciseisavos";
+}
+
 function formatKoHora(kickoff: string): string {
   return new Date(kickoff).toLocaleString("es-ES", {
     timeZone: "Europe/Madrid", hour: "2-digit", minute: "2-digit",
@@ -162,7 +171,7 @@ export default function JornadaScreen({ players, real, youtube }: Props) {
   const [day, setDay] = useState<string>(getDefaultDay);
   const [open, setOpen] = useState<Set<string>>(() => new Set());
   const [phase, setPhase] = useState<Phase>(DEFAULT_PHASE);
-  const [koRonda, setKoRonda] = useState<KoRondaKey>("dieciseisavos");
+  const [koRonda, setKoRonda] = useState<KoRondaKey>(getDefaultKoRonda);
 
   const idx = DAYS.indexOf(day);
   const fixtures = (horarios[day] ?? [])
@@ -430,7 +439,7 @@ export default function JornadaScreen({ players, real, youtube }: Props) {
           {/* Lista de cruces */}
           {(() => {
             const cruces = CRUCES["enfr_" + koRonda] ?? [];
-            const hasResults = koRonda === "dieciseisavos" || cruces.some((c) => !!real[c.partido]);
+            const hasResults = cruces.some((c) => !!c.kickoff || !!real[c.partido]);
 
             if (!hasResults) {
               return (

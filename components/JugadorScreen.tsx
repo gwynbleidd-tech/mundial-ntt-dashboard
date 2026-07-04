@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { Player, RealResults, RealExtra, Match } from "@/lib/scoring";
 import { scorePlayer, scoreMatch, GRUPO_PTS, multiplicadorPartido } from "@/lib/scoring";
+import crusesData from "@/data/cruces_eliminatoria.json";
 import { C } from "@/lib/theme";
 
 // ---- constants ----
@@ -17,6 +18,22 @@ const KO_RONDAS = [
   { key: "3y4",           label: "3er y 4º puesto",  short: "3º y 4º" },
   { key: "final",         label: "Final",             short: "Final" },
 ] as const;
+
+const KO_PTS: Record<string, [number, number, number]> = {
+  dieciseisavos: [3, 2, 5], octavos: [3, 2, 5], cuartos: [4, 2, 6],
+  semis: [6, 4, 10], "3y4": [10, 5, 15], final: [12, 6, 18],
+};
+
+const CRUCES_KO = crusesData as Record<string, { kickoff?: string }[]>;
+
+function getDefaultRondaTab(): string {
+  for (let i = KO_RONDAS.length - 1; i >= 0; i--) {
+    if ((CRUCES_KO["enfr_" + KO_RONDAS[i].key] ?? []).some((c) => c.kickoff)) {
+      return KO_RONDAS[i].key;
+    }
+  }
+  return "dieciseisavos";
+}
 
 // ---- constants de color (idénticos a JornadaScreen) ----
 
@@ -235,7 +252,7 @@ interface Props {
 
 export default function JugadorScreen({ players, picked, onPick, real, extra }: Props) {
   const [grupoTab, setGrupoTab] = useState<string>("todos");
-  const [rondaTab, setRondaTab] = useState<string>("dieciseisavos");
+  const [rondaTab, setRondaTab] = useState<string>(getDefaultRondaTab);
   const [openSections, setOpenSections] = useState<Set<string>>(() => new Set(["honor"]));
 
   const player = players.find((p) => p.id === picked) ?? players[0];
@@ -438,11 +455,19 @@ export default function JugadorScreen({ players, picked, onPick, real, extra }: 
                 {ronda?.label}
               </div>
               {matches?.length
-                ? matches.map((m, i) => (
-                    <MatchRow key={i} local={m.local} visitante={m.visitante} pred={m.pred}
-                      mult={multiplicadorPartido(m.partido, m.local, m.visitante)}
-                    />
-                  ))
+                ? matches.map((m, i) => {
+                    const r = real[m.partido];
+                    const mult = multiplicadorPartido(m.partido, m.local, m.visitante);
+                    const baremo = KO_PTS[rondaTab];
+                    const s = r && baremo ? scoreMatch(m.pred, r, [baremo[0] * mult, baremo[1] * mult, baremo[2] * mult]) : null;
+                    return (
+                      <MatchRow key={i} local={m.local} visitante={m.visitante} pred={m.pred}
+                        hit={s ? s.hit as Hit : null}
+                        pts={s ? s.pts : null}
+                        mult={mult}
+                      />
+                    );
+                  })
                 : <p style={{ color: C.muted, fontSize: 13 }}>Sin partidos</p>}
             </div>
           );

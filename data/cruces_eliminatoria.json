@@ -115,292 +115,60 @@
   ],
   "enfr_octavos": [
     {
-      "partido": "Alemania-Francia",
-      "local": "Alemania",
+      "partido": "Canadá-Marruecos",
+      "local": "Canadá",
+      "visitante": "Marruecos",
+      "kickoff": "2026-07-04T19:00:00+02:00",
+      "jugadores": ["isma"]
+    },
+    {
+      "partido": "Paraguay-Francia",
+      "local": "Paraguay",
       "visitante": "Francia",
-      "jugadores": [
-        "isma",
-        "jorge",
-        "lucas",
-        "miguelangel",
-        "pablo",
-        "dani",
-        "david"
-      ]
-    },
-    {
-      "partido": "México-Inglaterra",
-      "local": "México",
-      "visitante": "Inglaterra",
-      "jugadores": [
-        "isma",
-        "jorge",
-        "lucas",
-        "miguelangel",
-        "alvaro",
-        "dani",
-        "david"
-      ]
-    },
-    {
-      "partido": "Argentina-Egipto",
-      "local": "Argentina",
-      "visitante": "Egipto",
-      "jugadores": [
-        "isma",
-        "lucas",
-        "miguelangel",
-        "alvaro",
-        "david"
-      ]
-    },
-    {
-      "partido": "Suiza-Portugal",
-      "local": "Suiza",
-      "visitante": "Portugal",
-      "jugadores": [
-        "isma",
-        "miguelangel",
-        "alvaro",
-        "dani",
-        "david"
-      ]
-    },
-    {
-      "partido": "Colombia-España",
-      "local": "Colombia",
-      "visitante": "España",
-      "jugadores": [
-        "lucas",
-        "miguelangel",
-        "alvaro",
-        "dani"
-      ]
-    },
-    {
-      "partido": "Croacia-España",
-      "local": "Croacia",
-      "visitante": "España",
-      "jugadores": [
-        "isma",
-        "jorge",
-        "pablo",
-        "david"
-      ]
-    },
-    {
-      "partido": "Turquía-Bélgica",
-      "local": "Turquía",
-      "visitante": "Bélgica",
-      "jugadores": [
-        "lucas",
-        "miguelangel",
-        "alvaro",
-        "david"
-      ]
+      "kickoff": "2026-07-04T23:00:00+02:00",
+      "jugadores": []
     },
     {
       "partido": "Brasil-Noruega",
       "local": "Brasil",
       "visitante": "Noruega",
-      "jugadores": [
-        "miguelangel",
-        "dani"
-      ]
+      "kickoff": "2026-07-05T22:00:00+02:00",
+      "jugadores": ["miguelangel", "dani"]
     },
     {
-      "partido": "Irán-Portugal",
-      "local": "Irán",
-      "visitante": "Portugal",
-      "jugadores": [
-        "lucas",
-        "pablo"
-      ]
-    },
-    {
-      "partido": "Marruecos-Noruega",
-      "local": "Marruecos",
-      "visitante": "Noruega",
-      "jugadores": [
-        "jorge",
-        "david"
-      ]
-    },
-    {
-      "partido": "Argentina-Australia",
-      "local": "Argentina",
-      "visitante": "Australia",
-      "jugadores": [
-        "pablo"
-      ]
-    },
-    {
-      "partido": "Argentina-Bélgica",
-      "local": "Argentina",
-      "visitante": "Bélgica",
-      "jugadores": [
-        "jorge"
-      ]
-    },
-    {
-      "partido": "Argentina-Turquía",
-      "local": "Argentina",
-      "visitante": "Turquía",
-      "jugadores": [
-        "dani"
-      ]
-    },
-    {
-      "partido": "Bosnia y Herzegovina-Brasil",
-      "local": "Bosnia y Herzegovina",
-      "visitante": "Brasil",
-      "jugadores": [
-        "david"
-      ]
-    },
-    {
-      "partido": "Bosnia y Herzegovina-Bélgica",
-      "local": "Bosnia y Herzegovina",
-      "visitante": "Bélgica",
-      "jugadores": [
-        "dani"
-      ]
-    },
-    {
-      "partido": "Brasil-Alemania",
-      "local": "Brasil",
-      "visitante": "Alemania",
-      "jugadores": [
-        "alvaro"
-      ]
-    },
-    {
-      "partido": "Brasil-Ecuador",
-      "local": "Brasil",
-      "visitante": "Ecuador",
-      "jugadores": [
-        "lucas"
-      ]
-    },
-    {
-      "partido": "Brasil-Senegal",
-      "local": "Brasil",
-      "visitante": "Senegal",
-      "jugadores": [
-        "isma"
-      ]
-    },
-    {
-      "partido": "Canadá-Marruecos",
-      "local": "Canadá",
-      "visitante": "Marruecos",
-      "jugadores": [
-        "isma"
-      ]
-    },
-    {
-      "partido": "Canadá-Países Bajos",
-      "local": "Canadá",
-      "visitante": "Países Bajos",
-      "jugadores": [
-        "miguelangel"
-      ]
-    },
-    {
-      "partido": "Canadá-Portugal",
-      "local": "Canadá",
-      "visitante": "Portugal",
-      "jugadores": [
-        "jorge"
-      ]
-    },
-    {
-      "partido": "Corea del Sur-Japón",
-      "local": "Corea del Sur",
-      "visitante": "Japón",
-      "jugadores": [
-        "jorge"
-      ]
-    },
-    {
-      "partido": "Corea del Sur-Marruecos",
-      "local": "Corea del Sur",
-      "visitante": "Marruecos",
-      "jugadores": [
-        "dani"
-      ]
-    },
-    {
-      "partido": "Curazao-Inglaterra",
-      "local": "Curazao",
+      "partido": "México-Inglaterra",
+      "local": "México",
       "visitante": "Inglaterra",
-      "jugadores": [
-        "pablo"
-      ]
+      "kickoff": "2026-07-06T02:00:00+02:00",
+      "jugadores": ["isma", "jorge", "lucas", "miguelangel", "alvaro", "dani", "david"]
     },
     {
-      "partido": "Ecuador-Francia",
-      "local": "Ecuador",
-      "visitante": "Francia",
-      "jugadores": [
-        "alvaro"
-      ]
+      "partido": "Portugal-España",
+      "local": "Portugal",
+      "visitante": "España",
+      "kickoff": "2026-07-06T21:00:00+02:00",
+      "jugadores": []
     },
     {
       "partido": "Estados Unidos-Bélgica",
       "local": "Estados Unidos",
       "visitante": "Bélgica",
-      "jugadores": [
-        "isma"
-      ]
+      "kickoff": "2026-07-07T02:00:00+02:00",
+      "jugadores": ["isma"]
     },
     {
-      "partido": "República Checa-Marruecos",
-      "local": "República Checa",
-      "visitante": "Marruecos",
-      "jugadores": [
-        "lucas"
-      ]
-    },
-    {
-      "partido": "República Checa-Países Bajos",
-      "local": "República Checa",
-      "visitante": "Países Bajos",
-      "jugadores": [
-        "alvaro"
-      ]
-    },
-    {
-      "partido": "Suecia-Noruega",
-      "local": "Suecia",
-      "visitante": "Noruega",
-      "jugadores": [
-        "pablo"
-      ]
-    },
-    {
-      "partido": "Suiza-Japón",
-      "local": "Suiza",
-      "visitante": "Japón",
-      "jugadores": [
-        "pablo"
-      ]
-    },
-    {
-      "partido": "Turquía-Egipto",
-      "local": "Turquía",
+      "partido": "Argentina-Egipto",
+      "local": "Argentina",
       "visitante": "Egipto",
-      "jugadores": [
-        "jorge"
-      ]
+      "kickoff": "2026-07-07T18:00:00+02:00",
+      "jugadores": ["isma", "lucas", "miguelangel", "alvaro", "david"]
     },
     {
-      "partido": "Turquía-República Checa",
-      "local": "Turquía",
-      "visitante": "República Checa",
-      "jugadores": [
-        "pablo"
-      ]
+      "partido": "Suiza-Colombia",
+      "local": "Suiza",
+      "visitante": "Colombia",
+      "kickoff": "2026-07-07T22:00:00+02:00",
+      "jugadores": []
     }
   ],
   "enfr_cuartos": [
