@@ -173,141 +173,32 @@
   ],
   "enfr_cuartos": [
     {
-      "partido": "Argentina-Portugal",
-      "local": "Argentina",
-      "visitante": "Portugal",
-      "jugadores": [
-        "isma",
-        "jorge",
-        "lucas",
-        "miguelangel",
-        "pablo",
-        "alvaro",
-        "dani",
-        "david"
-      ]
+      "partido": "Francia-Marruecos",
+      "local": "Francia",
+      "visitante": "Marruecos",
+      "kickoff": "2026-07-09T22:00:00+02:00",
+      "jugadores": ["isma", "dani"]
     },
     {
       "partido": "España-Bélgica",
       "local": "España",
       "visitante": "Bélgica",
-      "jugadores": [
-        "isma",
-        "lucas",
-        "miguelangel",
-        "alvaro",
-        "dani"
-      ]
-    },
-    {
-      "partido": "Brasil-Inglaterra",
-      "local": "Brasil",
-      "visitante": "Inglaterra",
-      "jugadores": [
-        "isma",
-        "lucas",
-        "miguelangel"
-      ]
-    },
-    {
-      "partido": "España-Turquía",
-      "local": "España",
-      "visitante": "Turquía",
-      "jugadores": [
-        "jorge",
-        "david"
-      ]
-    },
-    {
-      "partido": "Francia-Japón",
-      "local": "Francia",
-      "visitante": "Japón",
-      "jugadores": [
-        "jorge",
-        "pablo"
-      ]
-    },
-    {
-      "partido": "Francia-Marruecos",
-      "local": "Francia",
-      "visitante": "Marruecos",
-      "jugadores": [
-        "isma",
-        "dani"
-      ]
+      "kickoff": "2026-07-10T21:00:00+02:00",
+      "jugadores": ["isma", "lucas", "miguelangel", "alvaro", "dani"]
     },
     {
       "partido": "Noruega-Inglaterra",
       "local": "Noruega",
       "visitante": "Inglaterra",
-      "jugadores": [
-        "pablo",
-        "dani"
-      ]
+      "kickoff": "2026-07-11T23:00:00+02:00",
+      "jugadores": ["pablo", "dani"]
     },
     {
-      "partido": "Alemania-Inglaterra",
-      "local": "Alemania",
-      "visitante": "Inglaterra",
-      "jugadores": [
-        "alvaro"
-      ]
-    },
-    {
-      "partido": "Alemania-Marruecos",
-      "local": "Alemania",
-      "visitante": "Marruecos",
-      "jugadores": [
-        "lucas"
-      ]
-    },
-    {
-      "partido": "Alemania-Países Bajos",
-      "local": "Alemania",
-      "visitante": "Países Bajos",
-      "jugadores": [
-        "miguelangel"
-      ]
-    },
-    {
-      "partido": "España-República Checa",
-      "local": "España",
-      "visitante": "República Checa",
-      "jugadores": [
-        "pablo"
-      ]
-    },
-    {
-      "partido": "Francia-Brasil",
-      "local": "Francia",
-      "visitante": "Brasil",
-      "jugadores": [
-        "david"
-      ]
-    },
-    {
-      "partido": "Francia-Países Bajos",
-      "local": "Francia",
-      "visitante": "Países Bajos",
-      "jugadores": [
-        "alvaro"
-      ]
-    },
-    {
-      "partido": "Marruecos-Inglaterra",
-      "local": "Marruecos",
-      "visitante": "Inglaterra",
-      "jugadores": [
-        "david"
-      ]
-    },
-    {
-      "partido": "Marruecos-México",
-      "local": "Marruecos",
-      "visitante": "México",
-      "jugadores": [
-        "jorge"
-      ]
+      "partido": "Argentina-Suiza",
+      "local": "Argentina",
+      "visitante": "Suiza",
+      "kickoff": "2026-07-12T03:00:00+02:00",
+      "jugadores": []
     }
   ],
   "enfr_semis": [
