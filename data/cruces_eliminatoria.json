@@ -206,52 +206,15 @@
       "partido": "Francia-España",
       "local": "Francia",
       "visitante": "España",
-      "jugadores": [
-        "isma",
-        "jorge",
-        "pablo",
-        "alvaro",
-        "dani",
-        "david"
-      ]
+      "kickoff": "2026-07-14T21:00:00+02:00",
+      "jugadores": ["isma", "jorge", "pablo", "alvaro", "dani", "david"]
     },
     {
-      "partido": "Inglaterra-Portugal",
+      "partido": "Inglaterra-Argentina",
       "local": "Inglaterra",
-      "visitante": "Portugal",
-      "jugadores": [
-        "pablo",
-        "alvaro",
-        "dani",
-        "david"
-      ]
-    },
-    {
-      "partido": "Brasil-Argentina",
-      "local": "Brasil",
       "visitante": "Argentina",
-      "jugadores": [
-        "isma",
-        "lucas",
-        "miguelangel"
-      ]
-    },
-    {
-      "partido": "Alemania-España",
-      "local": "Alemania",
-      "visitante": "España",
-      "jugadores": [
-        "lucas",
-        "miguelangel"
-      ]
-    },
-    {
-      "partido": "Marruecos-Portugal",
-      "local": "Marruecos",
-      "visitante": "Portugal",
-      "jugadores": [
-        "jorge"
-      ]
+      "kickoff": "2026-07-15T21:00:00+02:00",
+      "jugadores": []
     }
   ],
   "enfr_3y4": [
