@@ -222,103 +222,17 @@
       "partido": "Francia-Inglaterra",
       "local": "Francia",
       "visitante": "Inglaterra",
-      "jugadores": [
-        "alvaro",
-        "david"
-      ]
-    },
-    {
-      "partido": "Alemania-Argentina",
-      "local": "Alemania",
-      "visitante": "Argentina",
-      "jugadores": [
-        "lucas"
-      ]
-    },
-    {
-      "partido": "Alemania-Brasil",
-      "local": "Alemania",
-      "visitante": "Brasil",
-      "jugadores": [
-        "miguelangel"
-      ]
-    },
-    {
-      "partido": "España-Inglaterra",
-      "local": "España",
-      "visitante": "Inglaterra",
-      "jugadores": [
-        "dani"
-      ]
-    },
-    {
-      "partido": "España-Marruecos",
-      "local": "España",
-      "visitante": "Marruecos",
-      "jugadores": [
-        "jorge"
-      ]
-    },
-    {
-      "partido": "Francia-Argentina",
-      "local": "Francia",
-      "visitante": "Argentina",
-      "jugadores": [
-        "isma"
-      ]
-    },
-    {
-      "partido": "Francia-Portugal",
-      "local": "Francia",
-      "visitante": "Portugal",
-      "jugadores": [
-        "pablo"
-      ]
+      "kickoff": "2026-07-18T23:00:00+02:00",
+      "jugadores": ["alvaro", "david"]
     }
   ],
   "enfr_final": [
     {
-      "partido": "España-Brasil",
-      "local": "España",
-      "visitante": "Brasil",
-      "jugadores": [
-        "isma",
-        "lucas"
-      ]
-    },
-    {
-      "partido": "España-Portugal",
-      "local": "España",
-      "visitante": "Portugal",
-      "jugadores": [
-        "alvaro",
-        "david"
-      ]
-    },
-    {
-      "partido": "Francia-Portugal",
-      "local": "Francia",
-      "visitante": "Portugal",
-      "jugadores": [
-        "jorge",
-        "dani"
-      ]
-    },
-    {
       "partido": "España-Argentina",
       "local": "España",
       "visitante": "Argentina",
-      "jugadores": [
-        "miguelangel"
-      ]
-    },
-    {
-      "partido": "España-Inglaterra",
-      "local": "España",
-      "visitante": "Inglaterra",
-      "jugadores": [
-        "pablo"
-      ]
+      "kickoff": "2026-07-19T21:00:00+02:00",
+      "jugadores": ["miguelangel"]
     }
   ]
 }
