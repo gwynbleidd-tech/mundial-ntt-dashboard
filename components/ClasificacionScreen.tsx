@@ -270,6 +270,7 @@ export default function ClasificacionScreen({ ranked, players, real, extra, load
             const n = r.score.partidosJugados;
             const signos1x2 = r.score.signos + r.score.exactos;
             const badge = anyPlayed && i < 3 ? PODIO[i] : (showLantern && i === lastIdx ? "🏮" : null);
+            const podiumBg = anyPlayed && i === 0 ? C.goldBg : anyPlayed && i === 1 ? C.silverBg : anyPlayed && i === 2 ? C.bronzeBg : "none";
 
             return (
               <button
@@ -277,10 +278,11 @@ export default function ClasificacionScreen({ ranked, players, real, extra, load
                 onClick={() => onPick(r.player.id)}
                 style={{
                   width: "100%", display: "flex", alignItems: "center", gap: 12,
-                  padding: "12px 4px",
+                  padding: "12px 8px",
                   borderTop: "none", borderLeft: "none", borderRight: "none",
                   borderBottom: `1px solid ${C.line}`,
-                  background: "none", cursor: "pointer", textAlign: "left",
+                  borderRadius: 8,
+                  background: podiumBg, cursor: "pointer", textAlign: "left",
                 }}
               >
                 <div style={{ width: 34, flexShrink: 0, textAlign: "center" }}>
